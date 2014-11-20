@@ -104,6 +104,38 @@
                                     <action selector="sendMailButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ner-dr-LRZ"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccW-9d-3er">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="130" width="176" height="42"/>
+                                </variation>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qol-OM-0cf">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="112" y="279" width="176" height="42"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W1X-gp-B5N">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.61491675400000001" blue="0.30810595899999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Send Mail">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="180" width="176" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="sendMailButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xcm-OP-m2L"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -113,6 +145,9 @@
                                 <exclude reference="0PB-o9-UAu"/>
                                 <exclude reference="Kbb-nS-5a1"/>
                                 <exclude reference="PvM-46-YIh"/>
+                                <exclude reference="ccW-9d-3er"/>
+                                <exclude reference="Qol-OM-0cf"/>
+                                <exclude reference="W1X-gp-B5N"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -122,6 +157,9 @@
                                 <include reference="0PB-o9-UAu"/>
                                 <include reference="Kbb-nS-5a1"/>
                                 <include reference="PvM-46-YIh"/>
+                                <include reference="ccW-9d-3er"/>
+                                <include reference="Qol-OM-0cf"/>
+                                <include reference="W1X-gp-B5N"/>
                             </mask>
                         </variation>
                     </view>
@@ -130,6 +168,7 @@
                         <outlet property="enterNameTextField" destination="0PB-o9-UAu" id="Cd2-Ba-lhd"/>
                         <outlet property="mailButton" destination="PvM-46-YIh" id="Y5C-lr-VfG"/>
                         <outlet property="messageLabel" destination="d8I-Hu-vph" id="pTI-AE-lJH"/>
+                        <outlet property="nameLabel" destination="ccW-9d-3er" id="hs3-Vd-rKA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
